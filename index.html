@@ -3,38 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Басты бет — Раимқұлова Гүлжан Жұмағалиевна</title>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <title>Басты бет — Раимкулова Гүлжан Жумалиевна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Marck+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page page-enter">
     <header class="site-header">
       <nav class="container nav">
-        <a class="brand" href="index.html">Психолог сайты</a>
+        <a class="brand" href="#home">Психолог сайты</a>
         <div class="menu">
-          <a class="active" href="index.html">Басты бет</a>
-          <a href="kyzmetter.html">Қызметтер</a>
-          <a href="ata-ana-akparat.html">Ата-аналарға</a>
-          <a href="kabyldau-uakyty.html">Қабылдау уақыты</a>
-          <a href="okushylarmen-zhumys.html">Оқушылармен жұмыс</a>
+          <a class="active" href="#home">Басты бет</a>
+          <a href="#services">Қызметтер</a>
+          <a href="#parents">Ата-аналарға</a>
+          <a href="#teachers">Мұғалімдер</a>
+          <a href="#booking">Жазылу</a>
+          <a href="#students">Оқушылар</a>
         </div>
       </nav>
+      <div class="scroll-progress" aria-hidden="true"></div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container hero__layout">
           <div>
-            <p class="hero__badge">Басты бет</p>
-            <h1>Раимқұлова Гүлжан Жұмағалиевна</h1>
+            <p class="hero__badge">Мектеп психологы</p>
+            <h1>Раимкулова Гүлжан Жумалиевна</h1>
             <p class="hero__subtitle">Мектеп психологы</p>
             <p>📌 Балалардың эмоционалдық дамуы мен психологиялық саулығын қолдау – менің басты мақсатым.</p>
             <p>📌 Әр бала – ерекше тұлға.</p>
             <div class="hero__actions">
-              <a class="button button--primary" href="kabyldau-uakyty.html">Кеңеске жазылу</a>
-              <a class="button button--secondary" href="ata-ana-akparat.html">Ата-аналарға кеңестер</a>
+              <a class="button button--primary" href="#booking">Кеңеске жазылу</a>
+              <a class="button button--secondary" href="#parents">Ата-аналарға кеңестер</a>
             </div>
           </div>
           <div class="photo-frame hero__photo-frame">
@@ -43,10 +48,10 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="about">
         <div class="container">
           <h2>👩‍🏫 Мен туралы</h2>
-          <p>Мен, Раимқұлова Гүлжан Жұмағалиевна, 20 жылдық тәжірибесі бар мектеп психологымын.</p>
+          <p>Мен, Раимкулова Гүлжан Жумалиевна, 20 жылдық тәжірибесі бар мектеп психологымын.</p>
           <ul class="list">
             <li>🎓 Білімі: Психология (Қ. Жұбанов атындағы АМУ)</li>
             <li>📍 Жұмыс орны: «№6 Хромтау гимназиясы» КММ</li>
@@ -54,14 +59,270 @@
         </div>
       </section>
 
-      <section class="section section--soft">
+      <section class="section section--soft" id="services">
         <div class="container">
-          <h2>📚 Менің бағыттарым</h2>
+          <div class="services__hero">
+            <p class="services__eyebrow">Психологиялық қолдау</p>
+            <h2 class="services__title">Қызметтер</h2>
+            <p class="services__lead">Әр оқушы, ата-ана және мұғалім үшін қауіпсіз, сенімді және нәтижелі психологиялық көмек.</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card service-card--students">
+              <h3>Оқушыларға</h3>
+              <ul class="list">
+                <li>Психологиялық диагностика</li>
+                <li>1 және 5-сынып оқушыларына бейімделу кезеңінде қолдау</li>
+                <li>Өзін-өзі бағалауды арттыру</li>
+                <li>Стресс және мазасыздықпен жұмыс</li>
+              </ul>
+            </article>
+            <article class="service-card service-card--parents">
+              <h3>Ата-аналарға</h3>
+              <ul class="list">
+                <li>Бала тәрбиесі бойынша жеке кеңес</li>
+                <li>Жасөспірім кезеңіндегі қиындықтарды түсіндіру</li>
+                <li>Оқу мотивациясын арттыру жолдары</li>
+              </ul>
+            </article>
+            <article class="service-card service-card--teachers">
+              <h3>Мұғалімдерге</h3>
+              <ul class="list">
+                <li>Психологиялық тренингтер</li>
+                <li>Сыныптағы психологиялық ахуалды жақсарту</li>
+                <li>Қақтығыстарды тиімді шешу жолдары</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="parents">
+        <div class="container">
+          <h2>📖 Ата-аналарға пайдалы ақпарат</h2>
           <div class="card-grid">
-            <article class="card"><strong>Бастауыш сынып оқушылары</strong><p>Бейімделу, сенімділік және мінез-құлық бойынша қолдау.</p></article>
-            <article class="card"><strong>Жасөспірімдер психологиясы</strong><p>Эмоцияны басқару, уайым мен күйзеліс деңгейін төмендету.</p></article>
-            <article class="card"><strong>Ата-аналарға кеңес беру</strong><p>Отбасылық қарым-қатынасты жақсарту, балаға дұрыс қолдау көрсету.</p></article>
-            <article class="card"><strong>Аутодеструктивті мінез-құлықтың алдын алу</strong><p>Тәуекелді жағдайларды ерте анықтау және алдын алу жұмыстары.</p></article>
+            <article class="card"><strong>Буллинг деген не және оны қалай анықтауға болады?</strong><p>Бала мінезіндегі өзгеріс, мектепке барудан бас тарту, үрей — буллингтің белгілері болуы мүмкін.</p></article>
+            <article class="card"><strong>Бала мектепке барғысы келмесе не істеу керек?</strong><p>Себебін сабырмен анықтап, мұғалім және психологпен бірлесіп шешім қабылдау қажет.</p></article>
+            <article class="card"><strong>Жасөспіріммен қалай дұрыс сөйлесу керек?</strong><p>Сыннан гөрі қолдау көрсетіп, ашық диалог пен сенімге негізделген қарым-қатынас орнату маңызды.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="teachers">
+        <div class="container">
+          <div class="teachers__hero">
+            <p class="teachers__eyebrow">Педагогтарға қолдау</p>
+            <h2 class="teachers__title">👩‍🏫 Мұғалімдермен жұмыс</h2>
+            <p class="teachers__lead">Тренингтер, әдістемелік материалдар және кәсіби қолдау құжаттары.</p>
+          </div>
+          <div class="doc-grid" aria-label="Құжаттар">
+            <a class="doc-card doc-card--thumb" href="Буллинг туралы Мұғалімдерге.docx" target="_blank" rel="noopener noreferrer">
+              <img class="doc-card__thumb" src="dep.jpg" alt="Буллинг туралы Мұғалімдерге" loading="lazy" decoding="async" />
+              <span class="doc-card__body">
+                <span class="doc-card__icon" aria-hidden="true">DOCX</span>
+                <span class="doc-card__title">Буллинг туралы Мұғалімдерге</span>
+                <span class="doc-card__meta">Файлды ашу/жүктеу</span>
+              </span>
+            </a>
+            <a class="doc-card doc-card--thumb" href="жас мамандар.docx" target="_blank" rel="noopener noreferrer">
+              <img class="doc-card__thumb" src="seep.jpg" alt="жас мамандар" loading="lazy" decoding="async" />
+              <span class="doc-card__body">
+                <span class="doc-card__icon" aria-hidden="true">DOCX</span>
+                <span class="doc-card__title">жас мамандар</span>
+                <span class="doc-card__meta">Файлды ашу/жүктеу</span>
+              </span>
+            </a>
+            <a class="doc-card doc-card--thumb" href="Жас мамандармен.docx" target="_blank" rel="noopener noreferrer">
+              <img class="doc-card__thumb" src="guli.jpg" alt="Жас мамандармен" loading="lazy" decoding="async" />
+              <span class="doc-card__body">
+                <span class="doc-card__icon" aria-hidden="true">DOCX</span>
+                <span class="doc-card__title">Жас мамандармен</span>
+                <span class="doc-card__meta">Файлды ашу/жүктеу</span>
+              </span>
+            </a>
+            <a class="doc-card doc-card--thumb" href="мұғалімдермен.docx" target="_blank" rel="noopener noreferrer">
+              <img class="doc-card__thumb" src="ggg.jpg" alt="мұғалімдермен" loading="lazy" decoding="async" />
+              <span class="doc-card__body">
+                <span class="doc-card__icon" aria-hidden="true">DOCX</span>
+                <span class="doc-card__title">мұғалімдермен</span>
+                <span class="doc-card__meta">Файлды ашу/жүктеу</span>
+              </span>
+            </a>
+            <a class="doc-card doc-card--thumb" href="Педагогтардың эмоционалды күйреуінің алдын алу.docx" target="_blank" rel="noopener noreferrer">
+              <img class="doc-card__thumb" src="deo.jpg" alt="Педагогтардың эмоционалды күйреуінің алдын алу" loading="lazy" decoding="async" />
+              <span class="doc-card__body">
+                <span class="doc-card__icon" aria-hidden="true">DOCX</span>
+                <span class="doc-card__title">Педагогтардың эмоционалды күйреуінің алдын алу</span>
+                <span class="doc-card__meta">Файлды ашу/жүктеу</span>
+              </span>
+            </a>
+          </div>
+          <p class="doc-note">Ескерту: мұнда тек қысқа превью көрсетіледі. Құжаттың толық мазмұны (барлық суреттері) файлды ашқанда көрінеді.</p>
+        </div>
+      </section>
+
+      <section class="section section--soft" aria-label="Жиі сұрақтар">
+        <div class="container">
+          <h2>❓ Жиі қойылатын сұрақтар</h2>
+          <div class="faq">
+            <details>
+              <summary>Балам сабақта зейінін шоғырландыра алмайды. Не істеу керек?</summary>
+              <p>Күн тәртібін реттеп, экран уақытын азайтып, қысқа үзілістермен оқу әдісін қолданыңыз. Қажет болса, психолог диагностика жүргізеді.</p>
+            </details>
+            <details>
+              <summary>Бала тұйық болып кетті, достарымен араласпайды. Бұл қауіпті ме?</summary>
+              <p>Бұл өтпелі кезең белгісі болуы мүмкін, бірақ ұзаққа созылса маманмен кеңескен дұрыс. Ерте қолдау көрсету өте маңызды.</p>
+            </details>
+            <details>
+              <summary>Емтихан алдында қатты қобалжу қалыпты ма?</summary>
+              <p>Иә, бірақ ол оқуына кедергі жасаса тыныс алу жаттығулары, релаксация және психологиялық қолдау қажет.</p>
+            </details>
+            <details>
+              <summary>Бала ашушаң болып кетті. Қалай әрекет ету керек?</summary>
+              <p>Эмоциясын жоққа шығармай, «сені түсінемін» деп қабылдап, бірге шешім іздеңіз. Қарым-қатынаста тұрақты шекара маңызды.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section appointment" id="booking">
+        <div class="container">
+          <div class="appointment__hero">
+            <p class="appointment__eyebrow">Қабылдау бөлімі</p>
+            <h2 class="appointment__title">Қабылдау уақыты және мекенжай</h2>
+            <p class="appointment__lead">Кеңес алуға ыңғайлы уақытта жазылып, мектептегі психолог кабинетін карта арқылы оңай таба аласыз.</p>
+            <div class="booking-actions">
+              <a class="button button--primary booking-actions__primary" href="https://wa.me/77071679445" target="_blank" rel="noopener noreferrer">WhatsApp арқылы жазылу</a>
+              <a class="button button--secondary booking-actions__secondary" href="#booking-form">Форманы толтыру</a>
+            </div>
+            <div class="booking-chips" aria-label="Жылдам ақпарат">
+              <span class="chip">🗓️ Дүйсенбі–Жұма</span>
+              <span class="chip">🕘 09:00–17:00</span>
+              <span class="chip">📍 №6 Хромтау гимназиясы</span>
+            </div>
+          </div>
+          <div class="appointment-grid">
+            <article class="card appointment-card">
+              <h3>Қабылдау кестесі</h3>
+              <p><strong>Күндер:</strong> Дүйсенбі - Жұма</p>
+              <p><strong>Уақыт:</strong> 09:00 - 17:00</p>
+              <p><strong>Байланыс:</strong> <a class="whatsapp-link" href="https://wa.me/77071679445" target="_blank" rel="noopener noreferrer">WhatsApp: +7 707 167 94 45</a></p>
+            </article>
+            <article class="card appointment-card">
+              <h3>Мекенжай</h3>
+              <p class="appointment-address">№6 Хромтау гимназиясы, 3-қабат, психология кабинеті.</p>
+              <div class="appointment-map-wrap">
+                <iframe class="appointment-map" src="https://go.2gis.com/Ui2Fs" title="№6 Хромтау гимназиясы карта" loading="lazy"></iframe>
+              </div>
+              <p class="appointment-note">Егер карта ашылмаса, сілтеме: <a href="https://go.2gis.com/Ui2Fs" target="_blank" rel="noopener noreferrer">https://go.2gis.com/Ui2Fs</a></p>
+            </article>
+            <article class="card appointment-card appointment-card--form" id="booking-form">
+              <h3>Онлайн жазылу</h3>
+              <form class="form" id="appointment-form">
+                <label>
+                  Аты-жөніңіз
+                  <input type="text" name="name" placeholder="Аты-жөні" required />
+                </label>
+                <label>
+                  Байланыс нөмірі
+                  <input type="tel" name="phone" placeholder="+7 ..." required />
+                </label>
+                <label>
+                  Сұраныс
+                  <textarea name="message" rows="4" placeholder="Қысқаша жазыңыз..."></textarea>
+                </label>
+                <button type="submit" class="button button--primary">Жіберу</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="students">
+        <div class="container">
+          <h2>🧠 Оқушылармен жұмыс</h2>
+          <p>Психологиялық тренингтер мен дамыту жұмыстарының кейбір материалдары және фотолар.</p>
+          <div class="gallery" style="margin: 18px 0 30px;" aria-label="Фотогалерея">
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="01.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="01.jpg" alt="Оқушылармен жұмыс — топтық тапсырма" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="02.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="02.jpg" alt="Оқушылармен жұмыс — талқылау және тапсырма" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="03.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="03.jpg" alt="Оқушылармен жұмыс — ойын элементтері" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="04.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="04.jpg" alt="Оқушылармен жұмыс — топтық жаттығу" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="05.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="05.jpg" alt="Оқушылармен жұмыс — сыныптағы белсенділік" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="06.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="06.jpg" alt="Оқушылармен жұмыс — қозғалыс ойыны" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="07.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="07.jpg" alt="Оқушылардың шығармашылық жұмыстары" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="08.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="08.jpg" alt="Арт-терапия — бояулармен жұмыс" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="09.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="09.jpg" alt="Оқушылардың суреттері" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__frame" href="10.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="10.jpg" alt="Сыныптағы көңілді сәт" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item gallery__item--wide">
+              <a class="gallery__frame" href="11.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="11.jpg" alt="Тренинг/сабақ барысы — жалпы көрініс" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item gallery__item--wide">
+              <a class="gallery__frame" href="12.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="12.jpg" alt="Оқушылар жұмыстары — көрме" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+            <figure class="gallery__item gallery__item--wide">
+              <a class="gallery__frame" href="13.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="gallery__img" src="13.jpg" alt="Оқушылардың суреттері — ағаш тақырыбы" loading="lazy" decoding="async" />
+              </a>
+            </figure>
+          </div>
+          <div class="card">
+            <h3>Материалдар</h3>
+            <ul class="list file-list">
+              <li><a href="3а Біз біргеміз психологиялық тренинг.docx" target="_blank" rel="noopener noreferrer">3а Біз біргеміз психологиялық тренинг</a></li>
+              <li><a href="4б Дақтар арт терапия.docx" target="_blank" rel="noopener noreferrer">4б Дақтар арт терапия</a></li>
+              <li><a href="4б достық-басты ғажайып.docx" target="_blank" rel="noopener noreferrer">4б Достық - басты ғажайып</a></li>
+              <li><a href="5 в Эмпатия.docx" target="_blank" rel="noopener noreferrer">5 в Эмпатия</a></li>
+              <li><a href="5в дос болайық.docx" target="_blank" rel="noopener noreferrer">5в Дос болайық</a></li>
+              <li><a href="6а кл қыздармен.docx" target="_blank" rel="noopener noreferrer">6а кл Қыздармен</a></li>
+              <li><a href="6кл Мен армандайтын мамандық.docx" target="_blank" rel="noopener noreferrer">6кл Мен армандайтын мамандық</a></li>
+              <li><a href="8-б Ресурстар ағашы.docx" target="_blank" rel="noopener noreferrer">8-б Ресурстар ағашы</a></li>
+              <li><a href="9а Мамандық тренинг.docx" target="_blank" rel="noopener noreferrer">9а Мамандық тренинг</a></li>
+              <li><a href="10 ә ағаш жаттығуы.docx" target="_blank" rel="noopener noreferrer">10 ә Ағаш жаттығуы</a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -73,8 +334,8 @@
         <path d="M16.05 3.2c-7.05 0-12.76 5.7-12.76 12.75 0 2.24.58 4.43 1.68 6.36L3 29l6.89-1.8a12.7 12.7 0 0 0 6.16 1.57h.01c7.04 0 12.75-5.7 12.75-12.75A12.75 12.75 0 0 0 16.05 3.2zm0 23.43h-.01c-1.9 0-3.77-.51-5.4-1.47l-.39-.23-4.09 1.07 1.09-3.99-.25-.41a10.58 10.58 0 0 1-1.62-5.63c0-5.87 4.78-10.65 10.66-10.65 5.88 0 10.65 4.78 10.65 10.66 0 5.87-4.78 10.65-10.64 10.65z" />
       </svg>
     </a>    <footer class="site-footer">
-      <div class="container">© 2026 Раимқұлова Гүлжан Жұмағалиевна. Все права защищены.</div>
+      <div class="container">© 2026 Раимкулова Гүлжан Жумалиевна. Барлық құқықтар қорғалған.</div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
-
